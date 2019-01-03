@@ -147,3 +147,18 @@ componentDidMount() {
 ## Challenge
 
 Add buttons, actions, and cases to your reducer so that we can increment and decrement by `+3` and `-5`
+
+
+# Remaining Issues
+
+- gross subscription
+  - have to set it up
+  - rerenders all components on any store change
+  - not expressive
+- not modular - all in one page
+- need some way of connecting to the store
+- if / else if (fixed with switch)
+- how to deal with many keys and many actions?
+- easy to make typos in action strings
+- how to parameterize actions to make them more abstract / general?
+  - add more keys! (corresponding handling in the reducer)
