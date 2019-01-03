@@ -151,14 +151,20 @@ Add buttons, actions, and cases to your reducer so that we can increment and dec
 
 # Remaining Issues
 
-- gross subscription
-  - have to set it up
-  - rerenders all components on any store change
-  - not expressive
-- not modular - all in one page
-- need some way of connecting to the store
 - if / else if (fixed with switch)
-- how to deal with many keys and many actions?
-- easy to make typos in action strings
 - how to parameterize actions to make them more abstract / general?
   - add more keys! (corresponding handling in the reducer)
+
+
+
+- X gross subscription
+  - X have to set it up
+  - X rerenders all components on any store change
+  - X not expressive
+- X not modular - all in one page
+  - X need some way of connecting to the store
+
+
+- how to deal with many keys and many actions?
+- nicer way to connect to the dispatch function (mapDispatchToProps)
+- easy to make typos in action strings
