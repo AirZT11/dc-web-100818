@@ -22,12 +22,32 @@ The steps we'll follow when we're thinking in Redux resemble our Thinking In Rea
   - Focus on single source of truth
   - "Shape" = keys and the _types_ of their values, e.g. { count: number, friends: [string] }
   - Decide initial values
+
+
+
+
+
+
+
 2. Add 'static' version of state using Redux
   - Create 'default' reducers with initial values (or maybe mock data)
   - Connect state to components with `mapStateToProps`
+
+
+
+
+
 3. Figure out how state changes over time
   - List the actions that will be triggered in your app
+
+  change the search text
+
+
   - Decide how your state should change in response to each action
+
+  should change
+
+
 4. Implement actions and reducers
   - Write action creators
   - Write cases in reducers that correspond to each action

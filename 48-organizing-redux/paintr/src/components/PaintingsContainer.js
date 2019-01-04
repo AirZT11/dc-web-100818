@@ -96,10 +96,7 @@ class PaintingsContainer extends React.Component {
             path="/"
             render={() => (
               <div className="ui narrow container segment">
-                <Searchbar
-                  value={this.state.searchText}
-                  onChange={this.changeSearch}
-                />
+                <Searchbar onChange={this.changeSearch} />
                 <PaintingsList
                   selectPainting={this.selectPainting}
                   paintings={this.filteredPaintings()}

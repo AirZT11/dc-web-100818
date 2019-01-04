@@ -1,4 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
+
+import { changeSearchText } from "../store";
 
 const Searchbar = props => (
   <div className="ui container">
@@ -7,11 +10,24 @@ const Searchbar = props => (
         type="text"
         placeholder="Search"
         value={props.value}
-        onChange={e => props.onChange(e.target.value)}
+        onChange={e => {
+          props.onChange(e.target.value);
+        }}
       />
     </div>
     <div className="ui clearing section divider" />
   </div>
 );
 
-export default Searchbar;
+const mapStateToProps = state => {
+  return {
+    value: state.searchText
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  {
+    onChange: changeSearchText
+  }
+)(Searchbar);
