@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { increaseVotes as vote } from "../redux/actions";
+import { increasingVotes as vote } from "../redux/actions";
 
 class PaintingDetail extends React.Component {
   render() {

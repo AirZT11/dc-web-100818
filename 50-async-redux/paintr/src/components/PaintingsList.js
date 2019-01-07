@@ -2,7 +2,7 @@ import React from "react";
 import PaintingListItem from "./PaintingListItem";
 import { connect } from "react-redux";
 
-const PaintingsList = props => (
+const PaintingsList = props => props.loading ? <div>Loading...</div> :(
   <div className="ui container">
     <div className="ui celled selection list">
       {props.paintings.map(painting => (
@@ -22,7 +22,8 @@ const mapStateToProps = state => {
       p =>
         p.title.toLowerCase().includes(state.searchText.toLowerCase()) ||
         p.artist.name.toLowerCase().includes(state.searchText.toLowerCase())
-    )
+    ),
+    loading: state.loading
   };
 };
 

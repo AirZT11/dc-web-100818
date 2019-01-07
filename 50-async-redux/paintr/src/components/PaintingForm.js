@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { updatePainting } from "../redux/actions";
+import { updatingPainting } from "../redux/actions";
 
 class PaintingForm extends React.Component {
   constructor(props) {
@@ -83,5 +83,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
   mapStateToProps,
-  { updatePaintingInfo: updatePainting }
+  { updatePaintingInfo: updatingPainting }
 )(withRouter(PaintingForm));
