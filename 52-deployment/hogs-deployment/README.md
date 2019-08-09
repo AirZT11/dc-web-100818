@@ -34,19 +34,6 @@ Goals:
   - browser compatibility
   - integrating with other developers code
 
-## What's new?
-- Servers
-- DNS Routing and domain names
-- Load Balancers
-- Databases and caching
-- Microservices
-  - at least two services
-  - deploy a separate service to serve your react app
-  - point your client at the server
-  - cors configured
-    - `*` -> 'frontend.com'
-- Diaster Recovery
-
 ## Deploying to Heroku
 - Strategy:
   - deploy backend
